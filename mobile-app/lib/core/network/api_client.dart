@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 
 class ScannerService {
   final Dio _dio = Dio(BaseOptions(
-    baseUrl: 'http://localhost:8002', // Scanner Engine
+    baseUrl: 'http://3.88.144.240:8001', // Scanner Engine
     connectTimeout: const Duration(seconds: 5),
     receiveTimeout: const Duration(seconds: 3),
   ));
@@ -23,7 +23,7 @@ class ScannerService {
 
 class ApiService {
   final Dio _dio = Dio(BaseOptions(
-    baseUrl: 'http://localhost:8000/api', // Laravel Backend
+    baseUrl: 'http://3.88.144.240/api', // Laravel Backend
   ));
 
   Future<Map<String, dynamic>?> getPortfolio() async {
